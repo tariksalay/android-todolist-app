@@ -1,33 +1,37 @@
-# Umpire Buddy — Android Baseball Counter
+# Umpire Buddy: Android Baseball Counter
 
-**Java · Android · UI Event Handling · State Management**
+**Java · AndroidX · AppCompat · ConstraintLayout · Activity state**
 
-A small Android learning project for tracking balls and strikes for a single baseball batter.
+A small Android learning exercise that tracks balls and strikes for one batter. The historical repository name is retained, but the supplied source implements an umpire counter rather than a to-do list.
 
-> **Repository naming note:** Despite the historical repository name `android-todolist-app`, the included source implements a **baseball umpire counter**, not a to-do list.
+## What this project demonstrates
 
-## Behavior
+- Connecting XML click events to Java activity handlers.
+- Updating small UI state and showing dialogs at thresholds.
+- Saving/restoring counter state during activity recreation.
 
-- Tap the application's ball/strike controls to update the displayed counts.
-- On **four balls**, show a "Walk" alert and reset the counts.
-- On **three strikes**, show an "Out" alert and reset the counts.
-- The counter tracks one batter at a time.
+## Start here
 
-## Source files
-
-| File | Role |
+| Read | Use it for |
 | --- | --- |
-| [MainActivity.java](MainActivity.java) | Android activity, click handlers, alert dialogs, and count logic |
-| [content_main.xml](content_main.xml) | Layout resources included with the exercise |
+| [Project walkthrough](docs/PROJECT_GUIDE.md) | Purpose, workflow, repository map, and a concrete example |
+| [Code and artifact reference](docs/CODE_REFERENCE.md) | Important files, functions, classes, and their responsibilities |
+| [Development guide](docs/DEVELOPMENT.md) | Setup, configuration, commands, tests, and remaining limitations |
 
-## Learning outcomes
+## Explore locally
 
-This exercise introduces Android `Activity` lifecycle basics, Java state variables, event handlers, UI text updates, and alert dialogs.
+This repository contains source snippets, not a complete Gradle app. Read the [host-project instructions](docs/DEVELOPMENT.md), then place the activity and layout into a compatible AndroidX host application.
 
-## Build limitations
+The repository does not include a manifest, Gradle wrapper, complete resource tree, or installable APK.
 
-The repository contains only a small set of source files, **not a complete Gradle / Android Studio project**. To build or run it, the files would need to be integrated into a compatible Android Studio project, with the required layout resources and legacy Android support-library references resolved.
+## Validation and scope
 
-No emulator, device, or build verification is claimed for the current repository.
+Layout XML and source/resource references were inspected. No Android build, emulator, or physical-device run was performed. AndroidX compatibility and lifecycle behavior need verification inside a complete host app.
 
-[GitHub profile](https://github.com/tariksalay)
+
+
+---
+
+[GitHub profile](https://github.com/tariksalay) · [Portfolio](https://tariksalay.github.io/) · [Earlier README](README_HISTORY.md)
+
+The earlier README is preserved as historical context; the guides above describe this branch's implementation.
