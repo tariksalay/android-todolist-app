@@ -1,9 +1,33 @@
-Umpire Buddy	
+# Umpire Buddy — Android Baseball Counter
 
-The purpose of this project is to help you get started with Android programming. It will introduce you to the syntax and semantics of Android/Java along with the mechanics of using Android Studio with the Android plugin.
+**Java · Android · UI Event Handling · State Management**
 
-The lab assignment is to create an Android application that can function as a ball-strike counter an umpire might use during a baseball game to keep track of the count for a batter.
+A small Android learning project for tracking balls and strikes for a single baseball batter.
 
-For now, the application only needs to keep track of balls and strikes for a single batter. In a future assignment, I may have you extend it to keep track of outs and/or innings. (If you want to add extra features during assignment #1, have at it.)
+> **Repository naming note:** Despite the historical repository name `android-todolist-app`, the included source implements a **baseball umpire counter**, not a to-do list.
 
-If the count reaches 3 strikes first, your application should display a dialog box announcing the batter is “Out!” If the count reaches 4 balls first, your application should display a dialog box announcing “Walk!” After either one, the count should be reset for the next batter.
+## Behavior
+
+- Tap the application's ball/strike controls to update the displayed counts.
+- On **four balls**, show a "Walk" alert and reset the counts.
+- On **three strikes**, show an "Out" alert and reset the counts.
+- The counter tracks one batter at a time.
+
+## Source files
+
+| File | Role |
+| --- | --- |
+| [MainActivity.java](MainActivity.java) | Android activity, click handlers, alert dialogs, and count logic |
+| [content_main.xml](content_main.xml) | Layout resources included with the exercise |
+
+## Learning outcomes
+
+This exercise introduces Android `Activity` lifecycle basics, Java state variables, event handlers, UI text updates, and alert dialogs.
+
+## Build limitations
+
+The repository contains only a small set of source files, **not a complete Gradle / Android Studio project**. To build or run it, the files would need to be integrated into a compatible Android Studio project, with the required layout resources and legacy Android support-library references resolved.
+
+No emulator, device, or build verification is claimed for the current repository.
+
+[GitHub profile](https://github.com/tariksalay)
